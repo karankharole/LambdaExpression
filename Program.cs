@@ -16,6 +16,12 @@
             foreach (Person person in personlist.FindAll(e => (e.Age < 60)).Take(2).ToList())
             {
                 Console.WriteLine("Name : " + person.Name + "\t\tAge : " + person.Age);
+               
+            }
+            Console.WriteLine("\n Checking for teenager");
+            foreach (Person person in personlist.FindAll(e => (e.Age >= 13 && e.Age <= 18)))
+            {
+                Console.WriteLine("Name : " + person.Name + "\t\tAge : " + person.Age);
             }
 
         }
