@@ -23,6 +23,10 @@
             {
                 Console.WriteLine("Name : " + person.Name + "\t\tAge : " + person.Age);
             }
+           
+            double avgAge = personlist.Average(e => e.Age);
+            Console.WriteLine("The avg age of the peoples : " + avgAge);
+
 
         }
     }
